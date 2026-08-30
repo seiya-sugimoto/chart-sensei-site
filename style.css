@@ -1,0 +1,57 @@
+:root {
+  --bg: #ffffff;
+  --ink: #1a1f2b;
+  --sub: #5c6577;
+  --line: #e2e6ee;
+  --panel: #f6f8fb;
+  --accent: #2e5ce6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1526;
+    --ink: #eef2fa;
+    --sub: #8d99b5;
+    --line: #24314f;
+    --panel: #131d34;
+    --accent: #6ea8ff;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1526;
+  --ink: #eef2fa;
+  --sub: #8d99b5;
+  --line: #24314f;
+  --panel: #131d34;
+  --accent: #6ea8ff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  line-height: 1.9;
+  font-size: 16px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+header { border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 32px; }
+.appname { font-size: 20px; font-weight: 700; margin: 0; }
+nav { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+h1 { font-size: 26px; font-weight: 700; margin: 0 0 8px; line-height: 1.5; }
+h2 { font-size: 17px; font-weight: 700; margin: 36px 0 10px; padding-top: 4px; }
+h3 { font-size: 15px; font-weight: 700; margin: 24px 0 6px; }
+p, li { font-size: 15px; }
+.lead { color: var(--sub); margin: 0 0 8px; }
+.updated { color: var(--sub); font-size: 13px; margin: 0 0 32px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 20px; margin: 20px 0; }
+ul { padding-left: 1.4em; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+footer { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 20px; color: var(--sub); font-size: 13px; }
+.tablebox { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--sub); font-weight: 500; white-space: nowrap; }
+a:focus-visible, nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
