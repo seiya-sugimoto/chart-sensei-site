@@ -1,6 +1,6 @@
 # chart-sensei-site
 
-iOSアプリ「チャート分析の先生」の公開ページ（GitHub Pages）。
+iOSアプリ「チャートの先生」の公開ページ（GitHub Pages）。
 
 - サポート: `index.html`
 - プライバシーポリシー: `privacy.html`
